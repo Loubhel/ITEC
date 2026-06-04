@@ -1,0 +1,39 @@
+<?xml version='1.0' encoding='utf-8'?>
+<products>
+  <product id="1">
+    <name>Brown Sugar Milk Tea</name>
+    <price>120.00</price>
+    <status>Available</status>
+    <category>milktea</category>
+  </product>
+  <product id="2">
+    <name>Classic Pearl Milk Tea</name>
+    <price>99.00</price>
+    <status>Available</status>
+    <category>milktea</category>
+  </product>
+  <product id="3">
+    <name>Taro Milk Tea</name>
+    <price>110.00</price>
+    <status>Available</status>
+    <category>milktea</category>
+  </product>
+  <product id="4">
+    <name>Mango Fruit Tea</name>
+    <price>105.00</price>
+    <status>Available</status>
+    <category>fruittea</category>
+  </product>
+  <product id="5">
+    <name>Matcha Cheese Foam</name>
+    <price>135.00</price>
+    <status>Available</status>
+    <category>special</category>
+  </product>
+  <product id="6">
+    <name>Matcha Milk Tea</name>
+    <price>670.00</price>
+    <status>Available</status>
+    <category>milktea</category>
+  </product>
+</products>

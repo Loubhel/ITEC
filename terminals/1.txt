@@ -1,0 +1,150 @@
+---
+pid: 31300
+cwd: "J:\github\itec ni lubelita\ITEC"
+command: "cd \"J:\\github\\itec ni lubelita\\ITEC\"; python run.py"
+started_at: 2026-06-04T14:44:05.122Z
+running_for_ms: 815014   
+---
+Milk Tea Shop running at http://127.0.0.1:5000WARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.
+XML data folder: data/xml/
+ * Serving Flask app 'backend.app'
+ * Debug mode: on
+
+ * Running on http://127.0.0.1:5000
+Press CTRL+C to quit
+ * Restarting with stat
+Milk Tea Shop running at http://127.0.0.1:5000
+XML data folder: data/xml/
+ * Debugger is active!
+ * Debugger PIN: 136-049-784
+127.0.0.1 - - [04/Jun/2026 22:44:23] "GET /api/products HTTP/1.1" 200 -
+127.0.0.1 - - [04/Jun/2026 22:44:30] "POST /api/auth/login HTTP/1.1" 200 -
+127.0.0.1 - - [04/Jun/2026 22:44:30] "GET /api/products HTTP/1.1" 200 -
+127.0.0.1 - - [04/Jun/2026 22:44:30] "POST /api/orders HTTP/1.1" 201 -
+127.0.0.1 - - [04/Jun/2026 22:44:30] "GET /api/orders HTTP/1.1" 200 -
+ * Detected change in 'J:\\github\\itec ni lubelita\\ITEC\\backend\\xml_db.py', reloading
+ * Restarting with stat
+Milk Tea Shop running at http://127.0.0.1:5000
+XML data folder: data/xml/
+ * Debugger is active!
+ * Debugger PIN: 136-049-784
+ * Detected change in 'J:\\github\\itec ni lubelita\\ITEC\\backend\\app.py', reloading
+ * Restarting with stat
+Milk Tea Shop running at http://127.0.0.1:5000 * Debugger is active!
+
+XML data folder: data/xml/
+ * Debugger PIN: 136-049-784
+ * Detected change in 'J:\\github\\itec ni lubelita\\ITEC\\run.py', reloading
+ * Restarting with stat
+Milk Tea Shop running at http://127.0.0.1:5000 * Debugger is active!
+
+  Guest entry:  http://127.0.0.1:5000/guest.html
+  Admin login:  admin / admin123
+  XML data:     data/xml/
+ * Debugger PIN: 136-049-784
+127.0.0.1 - - [04/Jun/2026 22:50:31] "POST /api/auth/guest HTTP/1.1" 200 -
+127.0.0.1 - - [04/Jun/2026 22:50:31] "GET /api/auth/session HTTP/1.1" 200 -
+127.0.0.1 - - [04/Jun/2026 22:50:31] "POST /api/orders HTTP/1.1" 201 -
+127.0.0.1 - - [04/Jun/2026 22:50:31] "POST /api/auth/login HTTP/1.1" 200 -
+127.0.0.1 - - [04/Jun/2026 22:50:31] "GET /api/orders HTTP/1.1" 200 -
+127.0.0.1 - - [04/Jun/2026 22:50:31] "PUT /api/orders/2 HTTP/1.1" 200 -
+127.0.0.1 - - [04/Jun/2026 22:54:42] "GET /guest.html HTTP/1.1" 200 -
+127.0.0.1 - - [04/Jun/2026 22:54:42] "GET /login.css HTTP/1.1" 200 -
+127.0.0.1 - - [04/Jun/2026 22:54:42] "GET /js/api.js HTTP/1.1" 200 -
+127.0.0.1 - - [04/Jun/2026 22:54:42] "GET /js/guest.js HTTP/1.1" 200 -
+127.0.0.1 - - [04/Jun/2026 22:54:42] "GET /api/auth/session HTTP/1.1" 200 -
+127.0.0.1 - - [04/Jun/2026 22:54:42] "GET /favicon.ico HTTP/1.1" 404 -
+127.0.0.1 - - [04/Jun/2026 22:54:51] "POST /api/auth/guest HTTP/1.1" 200 -
+127.0.0.1 - - [04/Jun/2026 22:54:51] "GET /menu.html HTTP/1.1" 200 -
+127.0.0.1 - - [04/Jun/2026 22:54:51] "GET /admin.css HTTP/1.1" 200 -
+127.0.0.1 - - [04/Jun/2026 22:54:51] "GET /js/api.js HTTP/1.1" 304 -
+127.0.0.1 - - [04/Jun/2026 22:54:51] "GET /js/nav.js HTTP/1.1" 200 -
+127.0.0.1 - - [04/Jun/2026 22:54:51] "GET /js/menu.js HTTP/1.1" 200 -
+127.0.0.1 - - [04/Jun/2026 22:54:51] "GET /api/auth/session HTTP/1.1" 200 -
+127.0.0.1 - - [04/Jun/2026 22:54:51] "GET /api/products?available=true HTTP/1.1" 200 -
+127.0.0.1 - - [04/Jun/2026 22:54:55] "GET /menu.html HTTP/1.1" 304 -
+127.0.0.1 - - [04/Jun/2026 22:54:55] "GET /admin.css HTTP/1.1" 304 -
+127.0.0.1 - - [04/Jun/2026 22:54:55] "GET /js/api.js HTTP/1.1" 304 -
+127.0.0.1 - - [04/Jun/2026 22:54:55] "GET /js/nav.js HTTP/1.1" 304 -
+127.0.0.1 - - [04/Jun/2026 22:54:55] "GET /js/menu.js HTTP/1.1" 304 -
+127.0.0.1 - - [04/Jun/2026 22:54:55] "GET /api/auth/session HTTP/1.1" 200 -
+127.0.0.1 - - [04/Jun/2026 22:54:55] "GET /api/products?available=true HTTP/1.1" 200 -
+127.0.0.1 - - [04/Jun/2026 22:54:56] "GET /home.html HTTP/1.1" 200 -
+127.0.0.1 - - [04/Jun/2026 22:54:56] "GET /admin.css HTTP/1.1" 304 -
+127.0.0.1 - - [04/Jun/2026 22:54:56] "GET /home.css HTTP/1.1" 200 -
+127.0.0.1 - - [04/Jun/2026 22:54:56] "GET /js/api.js HTTP/1.1" 304 -
+127.0.0.1 - - [04/Jun/2026 22:54:56] "GET /js/nav.js HTTP/1.1" 304 -
+127.0.0.1 - - [04/Jun/2026 22:54:56] "GET /api/auth/session HTTP/1.1" 200 -
+127.0.0.1 - - [04/Jun/2026 22:54:58] "GET /menu.html HTTP/1.1" 304 -
+127.0.0.1 - - [04/Jun/2026 22:54:58] "GET /admin.css HTTP/1.1" 304 -
+127.0.0.1 - - [04/Jun/2026 22:54:58] "GET /js/api.js HTTP/1.1" 304 -
+127.0.0.1 - - [04/Jun/2026 22:54:58] "GET /js/nav.js HTTP/1.1" 304 -
+127.0.0.1 - - [04/Jun/2026 22:54:58] "GET /js/menu.js HTTP/1.1" 304 -
+127.0.0.1 - - [04/Jun/2026 22:54:58] "GET /api/auth/session HTTP/1.1" 200 -
+127.0.0.1 - - [04/Jun/2026 22:54:58] "GET /api/products?available=true HTTP/1.1" 200 -
+127.0.0.1 - - [04/Jun/2026 22:54:59] "GET /menu.html HTTP/1.1" 304 -
+127.0.0.1 - - [04/Jun/2026 22:54:59] "GET /admin.css HTTP/1.1" 304 -
+127.0.0.1 - - [04/Jun/2026 22:54:59] "GET /js/api.js HTTP/1.1" 304 -
+127.0.0.1 - - [04/Jun/2026 22:54:59] "GET /js/nav.js HTTP/1.1" 304 -
+127.0.0.1 - - [04/Jun/2026 22:54:59] "GET /js/menu.js HTTP/1.1" 304 -
+127.0.0.1 - - [04/Jun/2026 22:54:59] "GET /api/auth/session HTTP/1.1" 200 -
+127.0.0.1 - - [04/Jun/2026 22:54:59] "GET /api/products?available=true HTTP/1.1" 200 -
+127.0.0.1 - - [04/Jun/2026 22:55:00] "GET /guest.html?admin=1 HTTP/1.1" 200 -
+127.0.0.1 - - [04/Jun/2026 22:55:00] "GET /login.css HTTP/1.1" 304 -
+127.0.0.1 - - [04/Jun/2026 22:55:00] "GET /js/api.js HTTP/1.1" 304 -
+127.0.0.1 - - [04/Jun/2026 22:55:00] "GET /js/guest.js HTTP/1.1" 304 -
+127.0.0.1 - - [04/Jun/2026 22:55:00] "GET /api/auth/session HTTP/1.1" 200 -
+127.0.0.1 - - [04/Jun/2026 22:55:02] "POST /api/auth/register HTTP/1.1" 201 -
+127.0.0.1 - - [04/Jun/2026 22:55:11] "POST /api/auth/login HTTP/1.1" 200 -
+127.0.0.1 - - [04/Jun/2026 22:55:11] "GET /admin.html HTTP/1.1" 200 -
+127.0.0.1 - - [04/Jun/2026 22:55:11] "GET /admin.css HTTP/1.1" 304 -
+127.0.0.1 - - [04/Jun/2026 22:55:11] "GET /js/auth.js HTTP/1.1" 200 -
+127.0.0.1 - - [04/Jun/2026 22:55:11] "GET /js/admin.js HTTP/1.1" 200 -
+127.0.0.1 - - [04/Jun/2026 22:55:11] "GET /js/api.js HTTP/1.1" 304 -
+127.0.0.1 - - [04/Jun/2026 22:55:11] "GET /api/auth/session HTTP/1.1" 200 -
+127.0.0.1 - - [04/Jun/2026 22:55:11] "GET /api/products HTTP/1.1" 200 -
+127.0.0.1 - - [04/Jun/2026 22:55:29] "POST /api/products HTTP/1.1" 201 -
+127.0.0.1 - - [04/Jun/2026 22:55:29] "GET /api/products HTTP/1.1" 200 -
+127.0.0.1 - - [04/Jun/2026 22:55:32] "GET /api/products HTTP/1.1" 200 -
+127.0.0.1 - - [04/Jun/2026 22:55:36] "PUT /api/products/6 HTTP/1.1" 200 -
+127.0.0.1 - - [04/Jun/2026 22:55:36] "GET /api/products HTTP/1.1" 200 -
+127.0.0.1 - - [04/Jun/2026 22:55:41] "POST /api/auth/logout HTTP/1.1" 200 -
+127.0.0.1 - - [04/Jun/2026 22:55:41] "GET /guest.html HTTP/1.1" 304 -
+127.0.0.1 - - [04/Jun/2026 22:55:41] "GET /login.css HTTP/1.1" 304 -
+127.0.0.1 - - [04/Jun/2026 22:55:41] "GET /js/api.js HTTP/1.1" 304 -
+127.0.0.1 - - [04/Jun/2026 22:55:41] "GET /js/guest.js HTTP/1.1" 304 -
+127.0.0.1 - - [04/Jun/2026 22:55:41] "GET /api/auth/session HTTP/1.1" 200 -
+127.0.0.1 - - [04/Jun/2026 22:55:46] "POST /api/auth/guest HTTP/1.1" 200 -
+127.0.0.1 - - [04/Jun/2026 22:55:46] "GET /menu.html HTTP/1.1" 304 -
+127.0.0.1 - - [04/Jun/2026 22:55:46] "GET /admin.css HTTP/1.1" 304 -
+127.0.0.1 - - [04/Jun/2026 22:55:46] "GET /js/api.js HTTP/1.1" 304 -
+127.0.0.1 - - [04/Jun/2026 22:55:46] "GET /js/nav.js HTTP/1.1" 304 -
+127.0.0.1 - - [04/Jun/2026 22:55:46] "GET /js/menu.js HTTP/1.1" 304 -
+127.0.0.1 - - [04/Jun/2026 22:55:46] "GET /api/auth/session HTTP/1.1" 200 -
+127.0.0.1 - - [04/Jun/2026 22:55:46] "GET /api/products?available=true HTTP/1.1" 200 -
+127.0.0.1 - - [04/Jun/2026 22:55:49] "GET /api/auth/session HTTP/1.1" 200 -
+127.0.0.1 - - [04/Jun/2026 22:55:53] "POST /api/orders HTTP/1.1" 201 -
+127.0.0.1 - - [04/Jun/2026 22:55:56] "GET /guest.html?admin=1 HTTP/1.1" 304 -
+127.0.0.1 - - [04/Jun/2026 22:55:56] "GET /login.css HTTP/1.1" 304 -
+127.0.0.1 - - [04/Jun/2026 22:55:56] "GET /js/api.js HTTP/1.1" 304 -
+127.0.0.1 - - [04/Jun/2026 22:55:56] "GET /js/guest.js HTTP/1.1" 304 -
+127.0.0.1 - - [04/Jun/2026 22:55:56] "GET /api/auth/session HTTP/1.1" 200 -
+127.0.0.1 - - [04/Jun/2026 22:55:57] "POST /api/auth/login HTTP/1.1" 200 -
+127.0.0.1 - - [04/Jun/2026 22:55:57] "GET /admin.html HTTP/1.1" 304 -
+127.0.0.1 - - [04/Jun/2026 22:55:57] "GET /js/api.js HTTP/1.1" 304 -
+127.0.0.1 - - [04/Jun/2026 22:55:57] "GET /admin.css HTTP/1.1" 304 -
+127.0.0.1 - - [04/Jun/2026 22:55:57] "GET /js/auth.js HTTP/1.1" 304 -
+127.0.0.1 - - [04/Jun/2026 22:55:57] "GET /js/admin.js HTTP/1.1" 304 -
+127.0.0.1 - - [04/Jun/2026 22:55:57] "GET /api/auth/session HTTP/1.1" 200 -
+127.0.0.1 - - [04/Jun/2026 22:55:57] "GET /api/products HTTP/1.1" 200 -
+127.0.0.1 - - [04/Jun/2026 22:55:59] "GET /orders.html HTTP/1.1" 200 -
+127.0.0.1 - - [04/Jun/2026 22:55:59] "GET /admin.css HTTP/1.1" 304 -
+127.0.0.1 - - [04/Jun/2026 22:55:59] "GET /js/orders.js HTTP/1.1" 200 -
+127.0.0.1 - - [04/Jun/2026 22:55:59] "GET /js/api.js HTTP/1.1" 304 -
+127.0.0.1 - - [04/Jun/2026 22:55:59] "GET /js/auth.js HTTP/1.1" 304 -
+127.0.0.1 - - [04/Jun/2026 22:55:59] "GET /api/auth/session HTTP/1.1" 200 -
+127.0.0.1 - - [04/Jun/2026 22:55:59] "GET /api/orders HTTP/1.1" 200 -
+127.0.0.1 - - [04/Jun/2026 22:56:01] "PUT /api/orders/2 HTTP/1.1" 200 -
+127.0.0.1 - - [04/Jun/2026 22:56:02] "GET /api/orders HTTP/1.1" 200 -
+127.0.0.1 - - [04/Jun/2026 22:56:02] "PUT /api/orders/1 HTTP/1.1" 200 -
+127.0.0.1 - - [04/Jun/2026 22:56:03] "GET /api/orders HTTP/1.1" 200 -

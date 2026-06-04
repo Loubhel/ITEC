@@ -4,7 +4,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home - Milk Tea</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link rel="stylesheet" href="admin.css">
+    <link rel="stylesheet" href="home.css">
 </head>
 <body>
 
@@ -13,38 +16,41 @@
         <div class="nav-links">
             <a href="home.html">Home</a>
             <a href="menu.html">Menu</a>
-            <a href="guest.html">Order Now</a>
-            <a href="admin.html">Admin</a>
+            <a href="guest.html" data-nav="user">Order Now</a>
+            <a href="guest.html?admin=1" data-nav="admin">Staff Login</a>
         </div>
     </nav>
 
     <div class="home-wrapper">
-        <div class="container">
+        <div class="home-content">
 
-            <!-- Banner -->
             <div class="banner">
+                <span class="banner-badge">Quezon City</span>
                 <h2>Welcome to Milk Tea</h2>
-                <p>Freshly brewed with love • Quezon City’s Favorite</p>
-                <button onclick="window.location.href='menu.html'" class="order-btn">
-                    Browse Our Menu
+                <p>Freshly brewed with love — premium tea, real fruit, and creamy goodness in every cup.</p>
+                <button type="button" onclick="window.location.href='guest.html'" class="order-btn">
+                    Order Now
+                </button>
+                <button type="button" onclick="window.location.href='menu.html'" class="order-btn" style="margin-left:12px; background:linear-gradient(135deg,#D6B38A,#c9a87c);">
+                    Browse Menu
                 </button>
             </div>
 
-            <!-- Highlights -->
-            <div class="menu-container">
-                <div class="card">
-                    <h3>🌟 Best Sellers</h3>
-                    <p>Brown Sugar Milk Tea, Classic Pearl, Taro Bliss</p>
+            <div class="features">
+                <div class="feature-card">
+                    <div class="feature-icon" aria-hidden="true">🌟</div>
+                    <h3>Best Sellers</h3>
+                    <p>Brown Sugar Milk Tea, Classic Pearl, and Taro Milk Tea — customer favorites every day.</p>
                 </div>
-
-                <div class="card">
-                    <h3>🌿 Fresh Ingredients</h3>
-                    <p>Premium tea leaves, real fruits & fresh milk daily</p>
+                <div class="feature-card">
+                    <div class="feature-icon" aria-hidden="true">🌿</div>
+                    <h3>Fresh Ingredients</h3>
+                    <p>Premium tea leaves, real fruits, and fresh milk prepared daily for the perfect sip.</p>
                 </div>
-
-                <div class="card">
-                    <h3>🚀 Quick Service</h3>
-                    <p>Fast preparation • Take-out & Delivery</p>
+                <div class="feature-card">
+                    <div class="feature-icon" aria-hidden="true">🚀</div>
+                    <h3>Quick Service</h3>
+                    <p>Fast preparation with take-out and delivery — your drink, ready when you are.</p>
                 </div>
             </div>
 
@@ -52,8 +58,10 @@
     </div>
 
     <footer>
-        <p>&copy; 2026 Milk Tea Shop • Quezon City, Philippines</p>
+        <p>&copy; 2026 Milk Tea Shop · Quezon City, Philippines</p>
     </footer>
 
+    <script src="js/api.js"></script>
+    <script src="js/nav.js"></script>
 </body>
 </html>

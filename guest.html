@@ -4,39 +4,42 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Welcome - Milk Tea</title>
-    <link rel="stylesheet" href="admin.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="login.css">
 </head>
 <body>
 
-    <div class="guest-container">
+    <div class="container">
+        <div class="logo-section">
+            <h1>🧋 Milk Tea</h1>
+            <p>Refreshing Moments, Sweet Memories</p>
+        </div>
+
         <div class="login-card">
-            <div class="logo-section">
-                <h1>🧋 Milk Tea</h1>
-                <p>Refreshing Moments, Sweet Memories</p>
-            </div>
-
             <h2>How would you like to enter?</h2>
-
             <div class="btn-group">
-                <button id="guestBtn">Continue as Guest</button>
-                <button id="adminBtn">Admin Login</button>
+                <button type="button" id="guestBtn">Continue as Guest</button>
+                <button type="button" id="adminBtn">Admin Login</button>
             </div>
+            <p class="admin-info"><small>Guests can browse the menu and place orders. Admin access is for staff only.</small></p>
+        </div>
 
-            <div class="admin-info">
-                <small>Admin access is for staff only</small>
+        <div class="modal" id="adminModal">
+            <div class="modal-content">
+                <span class="close" id="closeModal">&times;</span>
+                <h2>Admin Login</h2>
+                <p class="admin-hint">Default: <strong>admin</strong> / <strong>admin123</strong> (from users.xml)</p>
+                <input type="text" id="username" placeholder="Username" autocomplete="username">
+                <input type="password" id="password" placeholder="Password" autocomplete="current-password">
+                <button type="button" id="loginAdmin">Login</button>
+                <button type="button" id="createAdmin">Create Account</button>
+                <button type="button" id="deleteAdmin">Delete Account</button>
             </div>
         </div>
     </div>
 
-    <script>
-        document.getElementById("guestBtn").addEventListener("click", () => {
-            window.location.href = "menu.html";
-        });
-
-        document.getElementById("adminBtn").addEventListener("click", () => {
-            window.location.href = "login.html";
-        });
-    </script>
-
+    <script src="js/api.js"></script>
+    <script src="js/guest.js"></script>
 </body>
 </html>

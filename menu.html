@@ -4,6 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Menu - Milk Tea</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link rel="stylesheet" href="admin.css">
 </head>
 <body>
@@ -13,8 +15,8 @@
         <div class="nav-links">
             <a href="home.html">Home</a>
             <a href="menu.html">Menu</a>
-            <a href="guest.html">Order Now</a>
-            <a href="admin.html">Admin</a>
+            <a href="guest.html" data-nav="user">Order Now</a>
+            <a href="guest.html?admin=1" data-nav="admin">Staff Login</a>
         </div>
     </nav>
 
@@ -22,28 +24,69 @@
         <div class="container">
 
             <div class="banner">
+                <span class="banner-badge">Handcrafted daily</span>
                 <h2>Our Menu</h2>
-                <p>Freshly made with love in Quezon City</p>
+                <p>Freshly made with love in Quezon City — pick your favorite and order in seconds.</p>
             </div>
 
             <div class="categories">
-                <button onclick="filterCategory('all')" class="active">All</button>
-                <button onclick="filterCategory('milktea')">Milk Tea</button>
-                <button onclick="filterCategory('fruittea')">Fruit Tea</button>
-                <button onclick="filterCategory('special')">Specialty</button>
+                <button type="button" onclick="filterCategory('all', this)" class="active">All</button>
+                <button type="button" onclick="filterCategory('milktea', this)">Milk Tea</button>
+                <button type="button" onclick="filterCategory('fruittea', this)">Fruit Tea</button>
+                <button type="button" onclick="filterCategory('special', this)">Specialty</button>
             </div>
 
-            <div class="menu-container" id="menuContainer">
-                <!-- Products loaded by JS -->
-            </div>
+            <div class="menu-container" id="menuContainer"></div>
 
         </div>
     </div>
 
     <footer>
-        <p>&copy; 2026 Milk Tea Shop • Quezon City, Philippines</p>
+        <p>&copy; 2026 Milk Tea Shop · Quezon City, Philippines</p>
     </footer>
 
+    <!-- Step 1: Order details -->
+    <div class="modal-overlay" id="orderModal" style="display:none;">
+        <div class="modal-box">
+            <button type="button" class="modal-close" id="closeOrderModal" aria-label="Close">&times;</button>
+            <h2>Place Order</h2>
+            <p id="orderProductName"></p>
+            <p id="orderProductPrice" class="price"></p>
+            <form id="orderForm">
+                <label>Your name (optional)</label>
+                <input type="text" id="customerName" placeholder="Guest name">
+                <label>Quantity</label>
+                <input type="number" id="orderQuantity" min="1" value="1" required>
+                <p id="orderTotal" class="price" style="margin:12px 0;">Total: ₱0.00</p>
+                <label>Payment</label>
+                <select id="orderPayment">
+                    <option value="Cash">Cash</option>
+                    <option value="GCash">GCash</option>
+                    <option value="Card">Card</option>
+                </select>
+                <div class="modal-actions">
+                    <button type="button" class="delete-btn" id="cancelOrderBtn">Cancel</button>
+                    <button type="submit" class="order-btn">Review Order</button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <!-- Step 2: Confirm -->
+    <div class="modal-overlay" id="confirmModal" style="display:none;">
+        <div class="modal-box">
+            <button type="button" class="modal-close" id="closeConfirmModal" aria-label="Close">&times;</button>
+            <h2>Confirm Order</h2>
+            <div id="confirmationDetails" style="text-align:left; margin-bottom:20px;"></div>
+            <div class="modal-actions">
+                <button type="button" class="delete-btn" id="removeOrderBtn">Go Back</button>
+                <button type="button" class="order-btn" id="submitOrderBtn">Submit Order</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/api.js"></script>
+    <script src="js/nav.js"></script>
     <script src="js/menu.js"></script>
 </body>
 </html>

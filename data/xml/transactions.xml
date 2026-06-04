@@ -1,0 +1,39 @@
+<?xml version='1.0' encoding='utf-8'?>
+<transactions>
+  <transaction id="1">
+    <order_id>2</order_id>
+    <product_id>1</product_id>
+    <product_name>Tea</product_name>
+    <price>120.00</price>
+    <quantity>1</quantity>
+    <total>120.00</total>
+    <payment>Cash</payment>
+    <customer_name>Maria</customer_name>
+    <status>Completed</status>
+    <completed_at>2026-06-04T14:50:31Z</completed_at>
+  </transaction>
+  <transaction id="2">
+    <order_id>2</order_id>
+    <product_id>6</product_id>
+    <product_name>Matcha Milk Tea</product_name>
+    <price>670.00</price>
+    <quantity>1</quantity>
+    <total>670.00</total>
+    <payment>Cash</payment>
+    <customer_name>Lubhel</customer_name>
+    <status>Completed</status>
+    <completed_at>2026-06-04T14:56:01Z</completed_at>
+  </transaction>
+  <transaction id="3">
+    <order_id>1</order_id>
+    <product_id>1</product_id>
+    <product_name>Test</product_name>
+    <price>120.00</price>
+    <quantity>2</quantity>
+    <total>240.00</total>
+    <payment>Cash</payment>
+    <customer_name>Guest</customer_name>
+    <status>Completed</status>
+    <completed_at>2026-06-04T14:56:02Z</completed_at>
+  </transaction>
+</transactions>
