@@ -3,7 +3,7 @@
   <product id="1">
     <name>Brown Sugar Milk Tea</name>
     <price>120.00</price>
-    <status>Available</status>
+    <status>Not Available</status>
     <category>milktea</category>
   </product>
   <product id="2">
