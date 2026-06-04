@@ -3,107 +3,57 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Milk Tea Shop - Guest</title>
-    <link rel="stylesheet" href="home.css">
+    <title>Home - Milk Tea</title>
+    <link rel="stylesheet" href="admin.css">
 </head>
 <body>
 
-    <header>
-        <h1>🧋 Milk Tea Shop</h1>
+    <nav>
+        <h2>🧋 Milk Tea</h2>
+        <div class="nav-links">
+            <a href="home.html">Home</a>
+            <a href="menu.html">Menu</a>
+            <a href="guest.html">Order Now</a>
+            <a href="admin.html">Admin</a>
+        </div>
+    </nav>
 
-        <a href="login.html" class="logout-btn">
-            Logout
-        </a>
-    </header>
+    <div class="home-wrapper">
+        <div class="container">
 
-    <section class="banner">
-
-    <h2>🧋 Freshly Brewed Happiness</h2>
-
-    <p>
-        Enjoy our best-selling milk teas made with
-        premium ingredients and love.
-    </p>
-
-</section>
-
-    <section class="hero">
-
-        <h2>Welcome to Our Milk Tea Shop</h2>
-
-        <p>
-            Choose your favorite milk tea and place your order.
-        </p>
-
-    </section>
-
-    <section class="categories">
-
-    <button>All</button>
-    <button>Classic</button>
-    <button>Fruit Tea</button>
-    <button>Premium</button>
-    <button>Best Seller</button>
-
-</section>
-
-    <section class="menu-section">
-
-        <h2>Our Menu</h2>
-
-        <div class="menu-container">
-
-            <div class="card">
-                <h3>Classic Milk Tea</h3>
-                <p class="price">₱120</p>
-                <button>Add Order</button>
+            <!-- Banner -->
+            <div class="banner">
+                <h2>Welcome to Milk Tea</h2>
+                <p>Freshly brewed with love • Quezon City’s Favorite</p>
+                <button onclick="window.location.href='menu.html'" class="order-btn">
+                    Browse Our Menu
+                </button>
             </div>
 
-            <div class="card">
-                <h3>Wintermelon</h3>
-                <p class="price">₱130</p>
-                <button>Add Order</button>
-            </div>
+            <!-- Highlights -->
+            <div class="menu-container">
+                <div class="card">
+                    <h3>🌟 Best Sellers</h3>
+                    <p>Brown Sugar Milk Tea, Classic Pearl, Taro Bliss</p>
+                </div>
 
-            <div class="card">
-                <h3>Okinawa</h3>
-                <p class="price">₱140</p>
-                <button>Add Order</button>
-            </div>
+                <div class="card">
+                    <h3>🌿 Fresh Ingredients</h3>
+                    <p>Premium tea leaves, real fruits & fresh milk daily</p>
+                </div>
 
-            <div class="card">
-                <h3>Taro Milk Tea</h3>
-                <p class="price">₱150</p>
-                <button>Add Order</button>
-            </div>
-
-            <div class="card">
-                <h3>Matcha Milk Tea</h3>
-                <p class="price">₱160</p>
-                <button>Add Order</button>
-            </div>
-
-            <div class="card">
-                <h3>Chocolate Milk Tea</h3>
-                <p class="price">₱150</p>
-                <button>Add Order</button>
+                <div class="card">
+                    <h3>🚀 Quick Service</h3>
+                    <p>Fast preparation • Take-out & Delivery</p>
+                </div>
             </div>
 
         </div>
+    </div>
 
-    </section>
-
-<footer>
-
-    <h3>🧋 Milk Tea Shop</h3>
-
-    <p>Open Daily: 10:00 AM - 9:00 PM</p>
-
-    <p>Contact: 0912-345-6789</p>
-
-    <p>© 2026 Milk Tea Shop</p>
-
-</footer>
+    <footer>
+        <p>&copy; 2026 Milk Tea Shop • Quezon City, Philippines</p>
+    </footer>
 
 </body>
 </html>

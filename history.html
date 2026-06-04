@@ -1,34 +1,35 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Transaction History</title>
-<link rel="stylesheet" href="admin.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transaction History - Milk Tea Admin</title>
+    <link rel="stylesheet" href="admin.css">
 </head>
 <body>
 
-<nav>
-    <h2>🧋 Milk Tea Admin</h2>
+    <nav>
+        <h2>🧋 Milk Tea Admin</h2>
+        <div class="nav-links">
+            <a href="admin.html">Products</a>
+            <a href="orders.html">Orders</a>
+            <a href="history.html">History</a>
+            <a href="archive.html">Archive</a>
+            <a href="login.html">Logout</a>
+        </div>
+    </nav>
 
-    <div class="nav-links">
-        <a href="admin.html">Products</a>
-        <a href="orders.html">Orders</a>
-        <a href="history.html">History</a>
-        <a href="archive.html">Archive</a>
-        <a href="login.html">Logout</a>
+    <div class="container">
+
+        <div class="header-section">
+            <h2>Transaction History</h2>
+            <p>All completed orders</p>
+        </div>
+
+        <div id="historyContainer"></div>
+
     </div>
-</nav>
 
-<div class="container">
-
-    <h2>Transaction History</h2>
-
-    <div id="historyContainer"></div>
-
-</div>
-
-<script src="js/history.js"></script>
-
+    <script src="js/history.js"></script>
 </body>
 </html>

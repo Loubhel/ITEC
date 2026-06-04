@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu - Milk Tea</title>
+    <link rel="stylesheet" href="admin.css">
+</head>
+<body>
+
+    <nav>
+        <h2>🧋 Milk Tea</h2>
+        <div class="nav-links">
+            <a href="home.html">Home</a>
+            <a href="menu.html">Menu</a>
+            <a href="guest.html">Order Now</a>
+            <a href="admin.html">Admin</a>
+        </div>
+    </nav>
+
+    <div class="menu-page-container">
+        <div class="container">
+
+            <div class="banner">
+                <h2>Our Menu</h2>
+                <p>Freshly made with love in Quezon City</p>
+            </div>
+
+            <div class="categories">
+                <button onclick="filterCategory('all')" class="active">All</button>
+                <button onclick="filterCategory('milktea')">Milk Tea</button>
+                <button onclick="filterCategory('fruittea')">Fruit Tea</button>
+                <button onclick="filterCategory('special')">Specialty</button>
+            </div>
+
+            <div class="menu-container" id="menuContainer">
+                <!-- Products loaded by JS -->
+            </div>
+
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2026 Milk Tea Shop • Quezon City, Philippines</p>
+    </footer>
+
+    <script src="js/menu.js"></script>
+</body>
+</html>
