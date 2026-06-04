@@ -1,0 +1,136 @@
+.card{
+    background:white;
+    border:3px solid #D6B38A;
+    border-radius:20px;
+    padding:20px;
+    text-align:center;
+    box-shadow:0 5px 15px rgba(0,0,0,.1);
+    transition:.3s;
+}
+.card{
+width:250px;
+height:280px;
+
+
+background:white;
+border:3px solid #D6B38A;
+border-radius:20px;
+padding:20px;
+
+display:flex;
+flex-direction:column;
+justify-content:space-between;
+align-items:center;
+
+text-align:center;
+box-shadow:0 5px 15px rgba(0,0,0,.1);
+transition:.3s;
+
+}
+
+.card:hover{
+transform:translateY(-8px);
+border-color:#8B5E3C;
+}
+
+.card:hover{
+    transform:translateY(-8px);
+    border-color:#8B5E3C;
+}
+
+.card img{
+    width:120px;
+    height:120px;
+    object-fit:cover;
+    margin-bottom:15px;
+}
+
+.card h3{
+    color:#8B5E3C;
+    margin-bottom:10px;
+}
+
+.price{
+    font-size:20px;
+    font-weight:bold;
+    color:#6D4C41;
+    margin-bottom:10px;
+}
+
+.rating{
+    color:#f39c12;
+    margin-bottom:10px;
+}
+
+.available{
+    display:inline-block;
+    background:#d4edda;
+    color:#155724;
+    padding:5px 10px;
+    border-radius:20px;
+    font-size:13px;
+    margin-bottom:15px;
+}
+
+.banner{
+    background:#E6CCB2;
+    text-align:center;
+    padding:50px 20px;
+    margin-bottom:30px;
+}
+
+.banner h2{
+    color:#5C4033;
+    margin-bottom:10px;
+    font-size:35px;
+}
+
+.banner p{
+    color:#6D4C41;
+    font-size:18px;
+}
+
+.categories{
+    display:flex;
+    justify-content:center;
+    gap:15px;
+    flex-wrap:wrap;
+    margin-bottom:30px;
+}
+
+.categories button{
+    background:white;
+    border:2px solid #D6B38A;
+    padding:10px 20px;
+    border-radius:25px;
+    cursor:pointer;
+}
+
+.categories button:hover{
+    background:#D6B38A;
+    color:white;
+}
+
+
+footer{
+    background:#8B5E3C;
+    color:white;
+    text-align:center;
+    padding:25px;
+    margin-top:50px;
+}
+
+footer p{
+    margin-top:5px;
+}
+
+.menu-container{
+display:grid;
+grid-template-columns:repeat(auto-fit, minmax(250px, 250px));
+justify-content:center;
+gap:25px;
+}
+
+*{
+    box-sizing:border-box;
+}

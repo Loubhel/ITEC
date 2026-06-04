@@ -1,0 +1,121 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins',sans-serif;
+}
+
+body{
+    background:#FFF8F0;
+    min-height:100vh;
+}
+
+nav{
+    background:#8B5E3C;
+    color:white;
+    padding:15px 30px;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    flex-wrap:wrap;
+}
+
+.nav-links{
+    display:flex;
+    gap:15px;
+}
+
+.nav-links a{
+    color:white;
+    text-decoration:none;
+    font-weight:bold;
+}
+
+.nav-links a:hover{
+    text-decoration:underline;
+}
+
+.container{
+    padding:30px;
+}
+
+.form-card{
+    background:white;
+    padding:25px;
+    border-radius:20px;
+    box-shadow:0 5px 15px rgba(0,0,0,.1);
+    margin-bottom:30px;
+}
+
+.form-card h2{
+    margin-bottom:15px;
+    color:#8B5E3C;
+}
+
+.form-card input,
+.form-card select{
+    width:100%;
+    padding:12px;
+    margin-bottom:10px;
+    border:1px solid #ddd;
+    border-radius:10px;
+}
+
+.form-card button{
+    width:100%;
+    padding:12px;
+    border:none;
+    border-radius:10px;
+    background:#8B5E3C;
+    color:white;
+    cursor:pointer;
+}
+
+.card{
+    background:white;
+    padding:20px;
+    border-radius:15px;
+    margin-bottom:15px;
+    box-shadow:0 3px 10px rgba(0,0,0,.1);
+}
+
+.card h3{
+    color:#8B5E3C;
+    margin-bottom:10px;
+}
+
+.btn-group{
+    margin-top:10px;
+    display:flex;
+    gap:10px;
+    flex-wrap:wrap;
+}
+
+.btn-group button{
+    padding:8px 12px;
+    border:none;
+    border-radius:8px;
+    cursor:pointer;
+    color:white;
+}
+
+.edit-btn{
+    background:#3498db;
+}
+
+.delete-btn{
+    background:#e74c3c;
+}
+
+.done-btn{
+    background:#27ae60;
+}
+
+.pending-btn{
+    background:#f39c12;
+}
+
+.status{
+    font-weight:bold;
+    margin-top:5px;
+}
